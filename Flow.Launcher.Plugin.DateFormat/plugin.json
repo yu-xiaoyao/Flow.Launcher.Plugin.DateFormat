@@ -1,0 +1,12 @@
+{
+    "ID": "4771EFDB0C3045CD81A0AB4D0716533D",
+    "ActionKeyword": "df",
+    "Name": "DateFormat",
+    "Description": "Date Time Formatter Plugin",
+    "Author": "yu-xiaoyao",
+    "Version": "1.0.0",
+    "Language": "csharp",
+    "Website": "https://github.com/yu-xiaoyao/Flow.Launcher.Plugin.DateFormat",
+    "IcoPath": "Images\\date-format.png",
+    "ExecuteFileName": "Flow.Launcher.Plugin.DateFormat.dll"
+}

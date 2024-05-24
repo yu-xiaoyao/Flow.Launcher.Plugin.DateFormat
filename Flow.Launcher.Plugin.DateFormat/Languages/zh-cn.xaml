@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:system="clr-namespace:System;assembly=mscorlib">
+    
+    <system:String x:Key="plugin_title">日期时间格式化</system:String>
+    <system:String x:Key="plugin_desp">一个日期,时间,时间戳格式化插件</system:String>
+    
+    <system:String x:Key="currentTimestamp">当前时间戳(毫秒)</system:String>
+    <system:String x:Key="currentTimestampSecond">当前时间戳(秒)</system:String>
+
+    <system:String x:Key="timestampTitle">时间戳(毫秒)</system:String>
+    <system:String x:Key="timestampSecondTitle">时间戳(秒)</system:String>
+    <system:String x:Key="timestampDayTitle">时间戳(天)</system:String>
+
+    <system:String x:Key="formatDateTimeTitle">日期时间</system:String>
+    <system:String x:Key="formatDateTimeMillsTitle">日期时间(毫秒)</system:String>
+    <system:String x:Key="formatISODateTimeMillsTitle">ISO 日期时间(毫秒)</system:String>
+    <system:String x:Key="formatISODateTimeTitle">ISO 日期时间</system:String>
+    <system:String x:Key="formatDateTitle">日期</system:String>
+    <system:String x:Key="formatTimeTitle">时间</system:String>
+    <system:String x:Key="formatTimeMillsTitle">时间(毫秒)</system:String>
+
+
+    <system:String x:Key="todayHourTitle">小时</system:String>
+    <system:String x:Key="todayMinuteTitle">分钟</system:String>
+    <system:String x:Key="todaySecondTitle">秒</system:String>
+    <system:String x:Key="todayMillsSecondTitle">毫秒</system:String>
+
+
+    <system:String x:Key="unitDayTitle">天</system:String>
+    <system:String x:Key="unitHourTitle">小时</system:String>
+    <system:String x:Key="unitMinuteTitle">分钟</system:String>
+    <system:String x:Key="unitSecondTitle">秒</system:String>
+    <system:String x:Key="unitMillSecondTitle">毫秒</system:String>
+
+</ResourceDictionary>
