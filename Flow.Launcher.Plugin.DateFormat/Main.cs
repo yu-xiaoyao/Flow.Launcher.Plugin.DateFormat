@@ -202,12 +202,12 @@ namespace Flow.Launcher.Plugin.DateFormat
 
         public string GetTranslatedPluginTitle()
         {
-            return _context.API.GetTranslation("plugin_title");
+            return _context.API.GetTranslation("date_format_plugin_title");
         }
 
         public string GetTranslatedPluginDescription()
         {
-            return _context.API.GetTranslation("plugin_desp");
+            return _context.API.GetTranslation("date_format_plugin_desp");
         }
     }
 }
