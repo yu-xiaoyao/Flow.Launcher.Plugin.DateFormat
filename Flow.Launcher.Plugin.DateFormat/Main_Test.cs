@@ -9,7 +9,24 @@ public class Main_Test
 {
     public static void Main()
     {
-        test_2();
+        
+        
+        var now = DateTime.UtcNow;
+        DateTime unixStartUTC = new(1970, 1, 1, 0, 0, 0, 0);
+        DateTime unixStart = TimeZoneInfo.ConvertTimeFromUtc(unixStartUTC, TimeZoneInfo.Local);
+
+        Console.WriteLine(unixStart);
+        Console.WriteLine(now);
+        var ts = now - unixStart;
+
+        Console.WriteLine(TimeZoneInfo.Local);
+        
+
+        
+        
+        Console.WriteLine(ts.TotalMilliseconds);
+
+        // test_2();
         // test_query_today();
         // test_query_datetime();
     }

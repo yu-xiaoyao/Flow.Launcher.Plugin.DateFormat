@@ -45,8 +45,15 @@ public class DateTimeFormatter
         "yyyyMMdd HHmmssfff",
     };
 
-    private static readonly DateTime UnixStart = new(1970, 1, 1, 0, 0, 0, 0);
+    private static readonly DateTime UnixStart;
 
+
+    static DateTimeFormatter()
+    {
+        // = new(1970, 1, 1, 0, 0, 0, 0);
+        var unixStartUtc = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+        UnixStart = TimeZoneInfo.ConvertTimeFromUtc(unixStartUtc, TimeZoneInfo.Local);
+    }
 
     public static Tuple<DetectFormat, DateTime> FormatAndDectectDateTime(string input)
     {
@@ -269,7 +276,7 @@ public class DateTimeFormatter
 
     public static long GetNowTimestamp()
     {
-        TimeSpan ts = DateTime.Now - UnixStart;
+        var ts = DateTime.Now - UnixStart;
         return Convert.ToInt64(ts.TotalMilliseconds);
     }
 }

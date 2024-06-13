@@ -4,7 +4,7 @@
     "Name": "DateFormat",
     "Description": "Date Time Formatter Plugin",
     "Author": "yu-xiaoyao",
-    "Version": "1.0.0",
+    "Version": "1.0.1",
     "Language": "csharp",
     "Website": "https://github.com/yu-xiaoyao/Flow.Launcher.Plugin.DateFormat",
     "IcoPath": "Images\\date-format.png",
