@@ -4,6 +4,7 @@ public class I18nKey
 {
     public const string CurrentTimestamp = "currentTimestamp";
     public const string CurrentTimestampSecond = "currentTimestampSecond";
+    public const string CurrentDateTime = "currentDateTime";
 
     public const string TimestampTitle = "timestampTitle";
     public const string TimestampSecondTitle = "timestampSecondTitle";

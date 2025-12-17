@@ -274,9 +274,18 @@ public class DateTimeFormatter
         return new List<FormatResult>();
     }
 
-    public static long GetNowTimestamp()
+    public static long GetTimestamp(DateTime? time = null)
     {
-        var ts = DateTime.Now - UnixStart;
-        return Convert.ToInt64(ts.TotalMilliseconds);
+        if (time == null)
+        {
+            var ts = DateTime.Now - UnixStart;
+            return Convert.ToInt64(ts.TotalMilliseconds);
+        }
+        else
+        {
+            var dt = (DateTime)time;
+            var ts = dt - UnixStart;
+            return Convert.ToInt64(ts.TotalMilliseconds);
+        }
     }
 }

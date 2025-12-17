@@ -9,6 +9,7 @@
     
     <system:String x:Key="currentTimestamp">当前时间戳(毫秒)</system:String>
     <system:String x:Key="currentTimestampSecond">当前时间戳(秒)</system:String>
+    <system:String x:Key="currentDateTime">当前</system:String>
 
     <system:String x:Key="timestampTitle">时间戳(毫秒)</system:String>
     <system:String x:Key="timestampSecondTitle">时间戳(秒)</system:String>

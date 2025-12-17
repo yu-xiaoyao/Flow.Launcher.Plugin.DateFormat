@@ -9,6 +9,7 @@
 
     <system:String x:Key="currentTimestamp">CurrentTimestamp(ms)</system:String>
     <system:String x:Key="currentTimestampSecond">CurrentTimestamp(s)</system:String>
+    <system:String x:Key="currentDateTime">CurrentDateTime</system:String>
 
     <system:String x:Key="timestampTitle">Timestamp(ms)</system:String>
     <system:String x:Key="timestampSecondTitle">Timestamp(s)</system:String>

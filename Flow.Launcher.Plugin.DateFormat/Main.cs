@@ -1,7 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Flow.Launcher.Plugin;
 
 namespace Flow.Launcher.Plugin.DateFormat
 {
@@ -99,7 +98,9 @@ namespace Flow.Launcher.Plugin.DateFormat
         {
             var list = new List<Result>();
 
-            var nowTimestamp = DateTimeFormatter.GetNowTimestamp();
+            var now = DateTime.Now;
+
+            var nowTimestamp = DateTimeFormatter.GetTimestamp();
             list.Add(new Result
             {
                 IcoPath = IconPath,
@@ -125,6 +126,36 @@ namespace Flow.Launcher.Plugin.DateFormat
                     return true;
                 }
             });
+
+
+            var dateTimeF1 = now.ToString("yyyy-MM-dd HH:mm:ss");
+            list.Add(new Result
+            {
+                IcoPath = IconPath,
+                Title = $"{dateTimeF1}",
+                SubTitle = _context.API.GetTranslation(I18nKey.CurrentDateTime),
+                CopyText = $"{dateTimeF1}",
+                Action = _ =>
+                {
+                    _context.API.CopyToClipboard(dateTimeF1, false, false);
+                    return true;
+                }
+            });
+
+            var dateTimeF2 = now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+            list.Add(new Result
+            {
+                IcoPath = IconPath,
+                Title = $"{dateTimeF2}",
+                SubTitle = _context.API.GetTranslation(I18nKey.CurrentDateTime),
+                CopyText = $"{dateTimeF2}",
+                Action = _ =>
+                {
+                    _context.API.CopyToClipboard(dateTimeF2, false, false);
+                    return true;
+                }
+            });
+
             return list;
         }
 
